@@ -119,6 +119,18 @@ function Register() {
 							required
 							onChange={(e) => setEmail(e.target.value)}
 						/> */}
+
+						<TextField
+							margin="normal"
+							required
+							fullWidth
+							id="name"
+							label="Full Name"
+							name="name"
+							autoComplete="name"
+							autoFocus
+						/>
+
 						<TextField
 							margin="normal"
 							required
