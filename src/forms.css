@@ -1,32 +1,96 @@
-.auth{
-  width: 90%;
-  max-width: 400px;
-  border: 1px solid #dcdcdc;
-  padding: 20px;
-  text-align: center;
+.auth {
+	width: 90%;
+	max-width: 400px;
+	border: 1px solid #dcdcdc;
+	padding: 20px;
+	text-align: center;
 }
 
-.auth form{
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  margin: 0 auto 10px auto;
+.auth form {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	margin: 0 auto 10px auto;
 }
 
-.auth__success{
-  padding: 10px 0;
-  background-color: hsl(147, 79%, 87%);
-  margin-bottom: 20px;
+.auth__success {
+	padding: 10px 0;
+	background-color: hsl(147, 79%, 87%);
+	margin-bottom: 20px;
 }
 
-.auth__error{
-  padding: 10px 0;
-  background-color: hsl(0, 79%, 87%);
-  margin-bottom: 20px;
+.auth__error {
+	padding: 10px 0;
+	background-color: hsl(0, 79%, 87%);
+	margin-bottom: 20px;
 }
 
-.auth form > input, button{
-  height: 40px;
-  font-size: 16px;
-  padding: 0 10px;
+.auth form > input,
+button {
+	height: 40px;
+	font-size: 16px;
+	padding: 0 10px;
+}
+
+.subheading {
+	font-size: 1.2rem;
+	color: rgb(123, 133, 143);
+}
+
+.heading {
+	font-weight: 600;
+}
+.btn {
+	padding: 2rem;
+	/* margin: 2rem; */
+	height: 5rem;
+	font-weight: 700;
+}
+
+.backbtn {
+	margin-top: 15px;
+	margin-right: 15px;
+	position: relative;
+	left: 0;
+	cursor: pointer;
+	transition: all 1s ease;
+}
+.backbtn:hover {
+	color: #023e8a;
+}
+.backtext {
+	font-size: 30px;
+	color: rgb(123, 133, 143);
+	transition: all 1s ease;
+}
+.backtext:hover {
+	color: #023e8a;
+}
+.backB {
+	all: unset;
+	cursor: pointer;
+}
+
+.form-control {
+	margin: 1rem;
+}
+.top-p {
+	background: inherit;
+	background-clip: text;
+	color: transparent;
+	filter: invert(1);
+}
+/* .top {
+	position: relative;
+	/* background-color: red; */
+/* right: 0;
+} */
+*/ .leftBar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.ph {
+	width: 60%;
 }
