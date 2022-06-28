@@ -1,4 +1,5 @@
 import "./profile.css";
+import { Helmet } from "react-helmet";
 import { useState } from "react";
 import { useAuthValue } from "./AuthContext";
 import { signOut } from "firebase/auth";
@@ -13,7 +14,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import TextField from "@mui/material/TextField";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
-
+import "./forms.css";
 import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
@@ -33,6 +34,10 @@ function Profile() {
 
 	return (
 		<Grid container component="main" sx={{ height: "100vh" }}>
+			<Helmet>
+				<title>Complete your Profile</title>
+				<meta name="description" content="Helmet application" />
+			</Helmet>
 			<CssBaseline />
 
 			<Grid
@@ -69,7 +74,6 @@ function Profile() {
 				>
 					<a className="backB" href="/">
 						<ArrowBackIosIcon className="backbtn" />
-						<span className="backtext">back</span>
 					</a>
 					<Typography
 						style={{
@@ -90,14 +94,14 @@ function Profile() {
 						alignItems: "center",
 					}}
 				>
-					{/* <p>
-						<strong>Email: </strong>
-						{currentUser?.email}
-					</p> */}
-					{/* <p>
-						<strong>Email verified: </strong>
-						{`${currentUser?.emailVerified}`}
-					</p> */}
+					<Typography
+						style={{ marginBottom: "2rem" }}
+						component="h3"
+						variant="h3"
+						className="heading"
+					>
+						Complete your Profile
+					</Typography>
 					<MuiPhoneNumber
 						style={{ width: "100%", marginBottom: "2rem" }}
 						name="phone"

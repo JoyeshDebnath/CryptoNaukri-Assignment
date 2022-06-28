@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./forms.css";
 //
-
+import { Helmet } from "react-helmet";
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -56,6 +56,10 @@ function Login() {
 	return (
 		// <div className="center">
 		<Grid container component="main" sx={{ height: "100vh" }}>
+			<Helmet>
+				<title>Login to ur account</title>
+				<meta name="description" content="Helmet application" />
+			</Helmet>
 			<CssBaseline />
 
 			{/* <div className="auth"> */}

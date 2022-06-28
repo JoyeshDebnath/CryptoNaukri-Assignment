@@ -8,7 +8,7 @@ import {
 } from "firebase/auth";
 import { useAuthValue } from "./AuthContext";
 //
-
+import { Helmet } from "react-helmet";
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -67,6 +67,10 @@ function Register() {
 
 	return (
 		<Grid container component="main" sx={{ height: "100vh" }}>
+			<Helmet>
+				<title>Register </title>
+				<meta name="description" content="Helmet application" />
+			</Helmet>
 			<CssBaseline />
 
 			<Grid
