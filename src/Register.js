@@ -177,13 +177,13 @@ function Register() {
 							required
 							fullWidth
 							name="password"
-							label="Confitm Password"
+							label="Confirm Password"
 							type="password"
 							id="password"
 							value={confirmPassword}
 							autoComplete="current-password"
 							placeholder="Confirm password"
-							onChange={(e) => setPassword(e.target.value)}
+							onChange={(e) => setConfirmPassword(e.target.value)}
 						/>
 
 						{/* <input

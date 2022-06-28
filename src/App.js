@@ -10,7 +10,7 @@ import { auth } from "./firebase";
 import { onAuthStateChanged } from "firebase/auth";
 import PrivateRoute from "./PrivateRoute";
 import { Navigate } from "react-router-dom";
-import Bank from "./Bank";
+
 function App() {
 	const [currentUser, setCurrentUser] = useState(null);
 	const [timeActive, setTimeActive] = useState(false);
