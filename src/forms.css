@@ -86,7 +86,8 @@ button {
 	/* background-color: red; */
 /* right: 0;
 } */
-*/ .leftBar {
+
+.leftBar {
 	display: flex;
 	align-items: center;
 	justify-content: center;
