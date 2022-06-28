@@ -34,7 +34,7 @@ function App() {
 							</PrivateRoute>
 						}
 					/>
-					<Route path="/bank" element={<PrivateRoute component={Bank} />} />
+
 					<Route
 						path="/login"
 						element={
